@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.item {
+    /* border-radius: 5px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+}
+
+marquee img {
+    margin-right: 10px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    background-color: gray;
+    text-align: center;
+    /* gap: 1px; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 0.4fr 1.9fr 2.5fr 1.8fr 1.2fr 1.5fr 0.6fr;
+    grid-template-areas: 'header header header header' 'nav nav nav nav' 'slide slide slide slide' 'box1 box2 box3 box4' 'box5 box6 box7 box4' 'main main main main' 'box8 box9 box10 box11' 'footer footer footer footer';
+}
+
+#header {
+    display: flex;
+    height: 70px;
+    background-color: black;
+    grid-area: header;
+    line-height: 10px;
+}
+
+nav {
+    background-color: #232F3E;
+    grid-area: nav;
+    display: flex;
+    height: 45px;
+    line-height: 3px;
+}
+
+#slide {
+    background-color: gray;
+    grid-area: slide;
+}
+
+#box1 {
+    /* background-color: rgb(165, 162, 162); */
+    grid-area: box1;
+}
+
+#box2 {
+    /* background-color: rgb(159, 235, 168); */
+    grid-area: box2;
+}
+
+#box3 {
+    /* background-color: rgb(196, 239, 169); */
+    grid-area: box3;
+}
+
+#box4 {
+    background-color: gray;
+    grid-area: box4;
+}
+
+#box5 {
+    background-color: gray;
+    grid-area: box5;
+}
+
+#box6 {
+    background-color: gray;
+    grid-area: box6;
+}
+
+#box7 {
+    background-color: gray;
+    grid-area: box7;
+}
+
+#main {
+    background-color: gray;
+    grid-area: main;
+}
+
+#box8 {
+    background-color: gray;
+    grid-area: box8;
+}
+
+#box9 {
+    background-color: gray;
+    grid-area: box9;
+}
+
+#box10 {
+    background-color: gray;
+    grid-area: box10;
+}
+
+#box11 {
+    background-color: gray;
+    grid-area: box11;
+}
+
+#footer {
+    background-color: #232f3e;
+    grid-area: footer;
+    color: white;
+}
+
+.links {
+    color: white;
+    margin: 10px 25px;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#link6 {
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    padding-top: 30px;
+}
+
+td {
+    text-align: center;
+    padding-top: 15px;
+}
